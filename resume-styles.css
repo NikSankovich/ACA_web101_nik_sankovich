@@ -1,0 +1,99 @@
+.container {
+    display: grid;
+    grid-template-columns: .3fr .35fr .45fr .3fr;
+    /* grid-template-rows: .25fr .75fr 1fr 1fr; */
+    /* grid-template-rows: 10% 20% 40% 30%; */
+    grid-template-rows: 150px 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". name name ."
+        ". contact profile ."
+        ". skills experience ."
+        ". education experience .";
+    height: fit-content;
+
+
+}
+
+.name {
+    grid-area: name;
+    background-color: rgb(214, 208, 208);
+}
+
+.experience {
+    grid-area: experience;
+}
+
+.profile {
+    grid-area: profile;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.education {
+    grid-area: education;
+
+}
+
+.name,
+.experience,
+.profile,
+.contact,
+.skills,
+.education {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+img {
+    max-width: 100px;
+    border-radius: 50%;
+    float: right;
+    margin-top: -125px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+h2 {
+    letter-spacing: 3px;
+
+}
+
+h2,
+h3,
+h4,
+p,
+ul {
+    font-family: 'Lato', sans-serif;
+}
+
+.name h3 {
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.profile {
+    line-height: 35px;
+}
+
+.experience {
+    line-height: 30px;
+}
+
+.education {
+    line-height: 24px;
+}
+
+.skills {
+    line-height: 35px;
+}
